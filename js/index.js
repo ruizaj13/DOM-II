@@ -36,7 +36,19 @@ logo.addEventListener('dblclick', event => {
 })
 
 document.addEventListener('copy', event => {
-    alert('COPYING IS NOT ALLOWED');
+    alert('🚨 COPYING IS NOT ALLOWED 🚨');
 })
 
 
+document.addEventListener("keydown", function(event) {
+    if(event.key === "q") {
+        document.body.style.backgroundColor = "red"
+    }
+    document.addEventListener("keyup", function(event) {
+        if(event.key === "q") {
+            document.body.style.backgroundColor = "blue"
+            
+        } else {document.body.style.backgroundColor = "initial"}
+    })
+    
+})
