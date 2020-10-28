@@ -40,7 +40,7 @@ document.addEventListener('copy', event => {
 })
 
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", event => {
     if(event.key === "q") {
         document.body.style.backgroundColor = "red"
     }
@@ -51,4 +51,8 @@ document.addEventListener("keydown", function(event) {
         } else {document.body.style.backgroundColor = "initial"}
     })
     
+})
+
+document.addEventListener('auxclick', event =>{
+    alert('What made you think you could right click on my site?');
 })
